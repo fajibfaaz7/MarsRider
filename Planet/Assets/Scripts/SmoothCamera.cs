@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour
 {
@@ -10,6 +8,7 @@ public class SmoothCamera : MonoBehaviour
     public float rotationSmoothness = .1f;
 
     public Vector3 offset;
+    public Vector3 rotOffset;
 
     private Vector3 velocity = Vector3.zero;
 
@@ -26,8 +25,12 @@ public class SmoothCamera : MonoBehaviour
         //transform.position = newPos;
         transform.position = Vector3.SmoothDamp(transform.position, newPos, ref velocity, smoothness);
 
-        Quaternion targetRot = Quaternion.LookRotation(-transform.position.normalized, target.up);
+        Quaternion targetRot = Quaternion.LookRotation(-transform.position.normalized, target.forward);
         //transform.rotation = targetRot;
+        
+        
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, Time.deltaTime * rotationSmoothness);
+
+       // transform.LookAt(target);
     }
 }
