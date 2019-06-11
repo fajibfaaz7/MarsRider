@@ -8,8 +8,7 @@ public class SmoothCamera : MonoBehaviour
     public float rotationSmoothness = .1f;
 
     public Vector3 offset;
-    public Vector3 rotOffset;
-
+    
     private Vector3 velocity = Vector3.zero;
 
     // Update is called once per frame
@@ -25,7 +24,7 @@ public class SmoothCamera : MonoBehaviour
         //transform.position = newPos;
         transform.position = Vector3.SmoothDamp(transform.position, newPos, ref velocity, smoothness);
 
-        Quaternion targetRot = Quaternion.LookRotation(-transform.position.normalized, target.forward);
+        Quaternion targetRot = Quaternion.LookRotation(-transform.position.normalized, target.up);
         //transform.rotation = targetRot;
         
         
@@ -34,3 +33,4 @@ public class SmoothCamera : MonoBehaviour
        // transform.LookAt(target);
     }
 }
+

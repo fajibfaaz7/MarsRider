@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
                 _rotation = 0;
             }
         }
+
+        
     }
 
     private void FixedUpdate()
