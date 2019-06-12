@@ -4821,6 +4821,8 @@ GameObject:
   - component: {fileID: 6862253427596170910}
   - component: {fileID: 1759149780}
   - component: {fileID: 1759149783}
+  - component: {fileID: -6152064583948499863}
+  - component: {fileID: 33534076}
   m_Layer: 0
   m_Name: Meteor_Prefab
   m_TagString: Untagged
@@ -4870,11 +4872,38 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714649711310468658}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.04556966
   m_Center: {x: -0.30176115, y: -0.11023641, z: -0.025665201}
+--- !u!114 &-6152064583948499863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714649711310468658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2492d12705fcd2f48959782e1b5a23ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeOnSurface: 0
+--- !u!114 &33534076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714649711310468658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5d076fc06a35e4a9501f4fd8997d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  craterPrefab: {fileID: 202747140274290224, guid: f3c533f6702340f48b406b9a79856e71,
+    type: 3}
 --- !u!1 &2532762857173288842
 GameObject:
   m_ObjectHideFlags: 0
