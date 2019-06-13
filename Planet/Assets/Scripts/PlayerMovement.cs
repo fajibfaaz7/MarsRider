@@ -43,5 +43,6 @@ public class PlayerMovement : MonoBehaviour
         Quaternion deltaRotation = Quaternion.Euler(yRotation);
         Quaternion targetRotation = rb.rotation * deltaRotation;
         rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, 50f * Time.deltaTime));
+        _rotation = 0;
     }
 }
