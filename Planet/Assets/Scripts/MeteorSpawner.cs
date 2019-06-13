@@ -10,12 +10,16 @@ public class MeteorSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(SpawnMeteorCoroutine());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator SpawnMeteorCoroutine()
     {
-        
+        float seconds = 2f;
+        float distance = Random.Range(20f, 25f);
+        Vector3 pos = Random.onUnitSphere * distance;
+        Instantiate(meteorPrefab, pos, Quaternion.identity);
+        yield return new WaitForSeconds(seconds);
+        StartCoroutine(SpawnMeteorCoroutine());
     }
 }

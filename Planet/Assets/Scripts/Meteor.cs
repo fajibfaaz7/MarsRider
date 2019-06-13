@@ -13,7 +13,7 @@ public class Meteor : MonoBehaviour
             Quaternion rot = Quaternion.LookRotation(transform.position.normalized);
             rot *= Quaternion.Euler(90f, 0f, 0f);
             Instantiate(craterPrefab, col.contacts[0].point, rot);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, .35f);
         }
     }
 }
