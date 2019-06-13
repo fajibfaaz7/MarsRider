@@ -4819,10 +4819,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 202747140274290225}
-  - component: {fileID: 4218499915868039370}
+  - component: {fileID: 1222708215250309159}
+  - component: {fileID: 5017563057125078936}
   m_Layer: 0
   m_Name: Crater_Prefab
-  m_TagString: Untagged
+  m_TagString: CraterGroup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4849,8 +4850,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &4218499915868039370
-SphereCollider:
+--- !u!65 &1222708215250309159
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4860,8 +4861,20 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.07631055
-  m_Center: {x: -0.0028067231, y: -0.035, z: -0.005454965}
+  m_Size: {x: 0.16349605, y: 0.05230689, z: 0.15883818}
+  m_Center: {x: -0.00027129054, y: 0.011531472, z: 0.0008479804}
+--- !u!114 &5017563057125078936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202747140274290224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c456614f12a0c045becbe543d34f30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &202747140869919380
 GameObject:
   m_ObjectHideFlags: 0
