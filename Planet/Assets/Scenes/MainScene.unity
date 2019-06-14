@@ -1393,7 +1393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447610245}
   m_LocalRotation: {x: 0.65694517, y: 0.0032683164, z: -0.002847896, w: 0.753926}
-  m_LocalPosition: {x: 0.01, y: 5.63, z: -0.7}
+  m_LocalPosition: {x: 0.01, y: 29.51, z: -3.3}
   m_LocalScale: {x: 1.0003562, y: 1.0003749, z: 1.000018}
   m_Children:
   - {fileID: 75737425}
@@ -1807,11 +1807,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8587158561622477685, guid: 3a325b069bc1801489f6184c62c4e07b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4715531523894327654, guid: 3a325b069bc1801489f6184c62c4e07b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1873,18 +1868,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: 6c71f97f5711d054283e86acc64251a3,
         type: 2}
-    - target: {fileID: 8587158561622477684, guid: 3a325b069bc1801489f6184c62c4e07b,
-        type: 3}
-      propertyPath: playerDeathPrefab
-      value: 
-      objectReference: {fileID: 1351005108125096027, guid: d2fcfb21a05d07a45bfd6e34ee50f1a5,
-        type: 3}
-    - target: {fileID: 8587158561622477684, guid: 3a325b069bc1801489f6184c62c4e07b,
-        type: 3}
-      propertyPath: playerDeathEffectPrefab
-      value: 
-      objectReference: {fileID: 9119822208222110375, guid: c6aaa79389a340d4eab82a94fd34eecc,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a325b069bc1801489f6184c62c4e07b, type: 3}
 --- !u!1001 &751531920248254089

@@ -3292,7 +3292,7 @@ GameObject:
   - component: {fileID: 291144224064607113}
   - component: {fileID: 8587158561622477684}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3431,8 +3431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f7211e59021d24da5ece74f9da21c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rotationSpeed: 300
+  moveSpeed: 4
+  rotationSpeed: 600
 --- !u!114 &8587158561622477684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3445,6 +3445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794b1256371a1aa40a4f15113e09a1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDeathPrefab: {fileID: 1351005108125096027, guid: d2fcfb21a05d07a45bfd6e34ee50f1a5,
+    type: 3}
+  playerDeathEffectPrefab: {fileID: 9119822208222110375, guid: c6aaa79389a340d4eab82a94fd34eecc,
+    type: 3}
 --- !u!1 &8763572109127146243
 GameObject:
   m_ObjectHideFlags: 0
