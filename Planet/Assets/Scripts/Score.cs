@@ -7,6 +7,7 @@ public class Score : MonoBehaviour
 {
     public static int sIncrement = 0;
     public Text scoreText;
+    public Text highScoreText;
 
     void Update()
     {
@@ -14,6 +15,10 @@ public class Score : MonoBehaviour
         {
             sIncrement++;
             scoreText.text = sIncrement.ToString();
+            if (sIncrement > PlayerPrefs.GetInt("HighScore", 0))
+            {
+                PlayerPrefs.SetInt("HighScore", sIncrement);
+            }
         }
     }
 }
