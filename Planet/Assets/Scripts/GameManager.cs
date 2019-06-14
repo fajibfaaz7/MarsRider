@@ -10,13 +10,23 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         PlayerCollision.isDead = false;
+        Score.sIncrement = 0;
         SceneManager.LoadScene("MainScene"); 
     }
 
     public void MainMenu()
     {
+        PlayerCollision.isDead = false;
         SceneManager.LoadScene("");
     }
 
-    
+
+    public void StartGame()
+    {
+        PlayerCollision.isDead = false;
+        Score.sIncrement = 0;
+        SceneManager.LoadScene("");
+    }
+
+   
 }
