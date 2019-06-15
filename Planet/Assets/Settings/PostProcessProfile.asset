@@ -53,7 +53,7 @@ MonoBehaviour:
     value: 50
   kernelSize:
     overrideState: 1
-    value: 0
+    value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,10 +105,10 @@ MonoBehaviour:
     value: 65472
   diffusion:
     overrideState: 1
-    value: 10
+    value: 7.69
   anamorphicRatio:
     overrideState: 1
-    value: 0
+    value: 1
   color:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -153,7 +153,7 @@ MonoBehaviour:
     value: 0.082
   toneCurveToeLength:
     overrideState: 1
-    value: 0.509
+    value: 0.639
   toneCurveShoulderStrength:
     overrideState: 1
     value: 0

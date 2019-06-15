@@ -17,6 +17,7 @@ public class PlayerCollision : MonoBehaviour
             rot *= Quaternion.Euler(90f, 0f, 0f);
             Vector3 pos = collision.contacts[0].point;
             isDead = true;
+            Handheld.Vibrate();
             Destroy(this.gameObject);
             Instantiate(playerDeathPrefab,pos,rot);
             Instantiate(playerDeathEffectPrefab, pos, rot);

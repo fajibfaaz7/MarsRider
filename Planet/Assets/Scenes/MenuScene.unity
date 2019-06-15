@@ -874,7 +874,7 @@ MonoBehaviour:
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
-    fastMode: 0
+    fastMode: 1
     keepAlpha: 0
   fog:
     enabled: 1
@@ -5833,7 +5833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b23e748160bab4b45a640e665f4d69de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -10
+  gravity: -20
 --- !u!135 &8296172668571483546
 SphereCollider:
   m_ObjectHideFlags: 0
