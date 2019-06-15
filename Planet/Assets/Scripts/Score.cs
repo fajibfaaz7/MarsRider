@@ -13,12 +13,20 @@ public class Score : MonoBehaviour
     {
         if(PlayerCollision.isDead == false)
         {
-            sIncrement++;
-            scoreText.text = sIncrement.ToString();
-            if (sIncrement > PlayerPrefs.GetInt("HighScore", 0))
+            if (GameManager.isScoreStopped == true)
             {
-                PlayerPrefs.SetInt("HighScore", sIncrement);
+                sIncrement += 0;
             }
+            else if(GameManager.isScoreStopped == false)
+            {
+                sIncrement += 1;
+                scoreText.text = sIncrement.ToString();
+                if (sIncrement > PlayerPrefs.GetInt("HighScore", 0))
+                {
+                    PlayerPrefs.SetInt("HighScore", sIncrement);
+                }
+
+            } 
         }
     }
 }
