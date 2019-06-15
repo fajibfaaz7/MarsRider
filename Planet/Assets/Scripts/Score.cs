@@ -13,11 +13,11 @@ public class Score : MonoBehaviour
     {
         if(PlayerCollision.isDead == false)
         {
-            if (GameManager.isScoreStopped == true)
+            if (GamePause.isScoreStopped == true)
             {
                 sIncrement += 0;
             }
-            else if(GameManager.isScoreStopped == false)
+            else if(GamePause.isScoreStopped == false)
             {
                 sIncrement += 1;
                 scoreText.text = sIncrement.ToString();

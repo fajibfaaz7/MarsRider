@@ -734,7 +734,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1783932813}
+      - m_Target: {fileID: 1600505814}
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1783932813}
+      - m_Target: {fileID: 1600505814}
         m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
@@ -2480,8 +2480,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1600505813}
   - component: {fileID: 1600505812}
+  - component: {fileID: 1600505814}
+  - component: {fileID: 1600505815}
   m_Layer: 0
-  m_Name: ScoreManager
+  m_Name: UIManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2515,6 +2517,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1600505814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600505811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c42d0f7487eb045b50ab800b6a09dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausedUI: {fileID: 1639194470}
+  pauseUI: {fileID: 1484992003}
+--- !u!114 &1600505815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600505811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70182a23ce9c175428ef88303fa4bb2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 124967875}
+  highScoreUI: {fileID: 544907261}
 --- !u!1 &1631234945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,10 +2845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9867ac06fe7b4224ba60006b899e0bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausedUI: {fileID: 1639194470}
-  pauseUI: {fileID: 1484992003}
-  gameOverUI: {fileID: 124967875}
-  highScoreUI: {fileID: 544907261}
 --- !u!4 &1783932814
 Transform:
   m_ObjectHideFlags: 0

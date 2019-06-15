@@ -811,10 +811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9867ac06fe7b4224ba60006b899e0bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausedUI: {fileID: 0}
-  pauseUI: {fileID: 0}
-  gameOverUI: {fileID: 0}
-  highScoreUI: {fileID: 0}
 --- !u!4 &1783932814
 Transform:
   m_ObjectHideFlags: 0
@@ -3450,7 +3446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6699292211697092998
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3466,10 +3462,10 @@ RectTransform:
   m_Father: {fileID: 6699292213058727015}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 11.2}
-  m_SizeDelta: {x: 50.19, y: 17.24}
+  m_AnchorMin: {x: 0.43875003, y: 0.05755751}
+  m_AnchorMax: {x: 0.57624996, y: 0.102110006}
+  m_AnchoredPosition: {x: 1.5999985, y: 0.41000366}
+  m_SizeDelta: {x: 1.0800018, y: -0.54000854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6699292211697092999
 MonoBehaviour:
@@ -3776,7 +3772,7 @@ GameObject:
   - component: {fileID: 6699292212285413482}
   - component: {fileID: 6699292212285413481}
   m_Layer: 5
-  m_Name: ReviveText
+  m_Name: SettingsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3823,10 +3819,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b3b4c1b7f1392a64396d38300b3f97a4, type: 3}
-    m_FontSize: 21
+    m_FontSize: 34
     m_FontStyle: 3
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3834,7 +3830,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Revive
+  m_Text: Settings
 --- !u!222 &6699292212285413482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3879,7 +3875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.938004}
   m_AnchorMin: {x: 0.60439587, y: 0.19855613}
   m_AnchorMax: {x: 0.77125007, y: 0.277}
-  m_AnchoredPosition: {x: -0.099975586, y: 0.000030517578}
+  m_AnchoredPosition: {x: -0.099975586, y: 0}
   m_SizeDelta: {x: -0.6600342, y: -0.66999817}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6699292212365585162
