@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private void Update()
+    public static GameManager instance;
+
+    
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            QuitGame();
-        }
+        instance = this;
     }
     public void Restart()
-    {
+    { 
         PlayerCollision.isDead = false;
         Score.sIncrement = 0;
         SceneManager.LoadScene("MainScene"); 

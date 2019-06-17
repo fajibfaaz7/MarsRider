@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Crater : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    //void Start()
+    //{
+    //    StartCoroutine(DestroyCrater());
+    //}
 
-    // Update is called once per frame
+    
     void Update()
     {
         Destroy(this.gameObject, 7f);
     }
+
+    //IEnumerator DestroyCrater()
+    //{
+    //    Destroy(this.gameObject);
+    //    yield return new WaitForSeconds(7f);
+    //}
 }

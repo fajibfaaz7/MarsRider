@@ -12,14 +12,15 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.collider.tag == "CraterGroup")
         {
-            // Debug.Log(collision.collider.name);
+            Debug.Log(collision.collider.name);
             Quaternion rot = Quaternion.LookRotation(transform.position.normalized);
             rot *= Quaternion.Euler(90f, 0f, 0f);
             Vector3 pos = collision.contacts[0].point;
             isDead = true;
             Handheld.Vibrate();
             Destroy(this.gameObject);
-            Instantiate(playerDeathPrefab,pos,rot);
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");   //car crash
+            Instantiate(playerDeathPrefab, pos, rot);
             Instantiate(playerDeathEffectPrefab, pos, rot);
             
 

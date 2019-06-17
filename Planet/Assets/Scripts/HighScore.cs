@@ -15,6 +15,10 @@ public class HighScore : MonoBehaviour
     IEnumerator HighScoreCouroutine()
     {
         highScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.instance.QuitGame();
+        }
         yield return new WaitForSeconds(.1f);
         StartCoroutine(HighScoreCouroutine());
     }
