@@ -3,7 +3,14 @@ using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
-{ 
+{
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+    }
     public void Restart()
     {
         PlayerCollision.isDead = false;

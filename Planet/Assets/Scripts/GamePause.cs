@@ -20,6 +20,11 @@ public class GamePause : MonoBehaviour
         {
             pauseUI.SetActive(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
     }
 
     public void Pause()
