@@ -9,24 +9,32 @@ public class Score : MonoBehaviour
     public Text scoreText;
     public Text highScoreText;
 
-    void Update()
+    void Start()
     {
-        if(PlayerCollision.isDead == false)
+        StartCoroutine(ScoreCouroutine());
+    }
+
+
+    IEnumerator ScoreCouroutine()
+    {
+        if (PlayerCollision.isDead == false)
         {
             if (GamePause.isScoreStopped == true)
             {
                 sIncrement += 0;
             }
-            else if(GamePause.isScoreStopped == false)
+            else if (GamePause.isScoreStopped == false)
             {
-                sIncrement += 1;
+                sIncrement += 3;
                 scoreText.text = sIncrement.ToString();
                 if (sIncrement > PlayerPrefs.GetInt("HighScore", 0))
                 {
                     PlayerPrefs.SetInt("HighScore", sIncrement);
                 }
 
-            } 
+            }
         }
+        yield return new WaitForSeconds(.1f);
+        StartCoroutine(ScoreCouroutine());
     }
 }

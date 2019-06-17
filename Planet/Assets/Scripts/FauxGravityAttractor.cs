@@ -21,12 +21,12 @@ public class FauxGravityAttractor : MonoBehaviour
         RotateBody(body);
     }
 
-    //public void PlaceOnSurface(Rigidbody body)
-    //{
-    //    body.MovePosition((body.position - transform.position).normalized * (transform.localScale.x * col.radius));
+    public void PlaceOnSurface(Rigidbody body)
+    {
+        body.MovePosition((body.position - transform.position).normalized * (transform.localScale.x * col.radius));
 
-    //    RotateBody(body);
-    //}
+        RotateBody(body);
+    }
     public void RotateBody(Rigidbody body)
     {
         Vector3 gravityUp = (body.position - transform.position).normalized;

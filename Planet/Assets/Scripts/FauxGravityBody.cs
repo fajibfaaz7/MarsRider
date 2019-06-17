@@ -14,10 +14,9 @@ public class FauxGravityBody : MonoBehaviour
         _attractor = FauxGravityAttractor.instance;
     }
 
-    
+
     void Update()
     {
-       
-            _attractor.Attract(rb);
+        _attractor.Attract(rb);
     }
 }

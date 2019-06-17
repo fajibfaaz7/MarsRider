@@ -13,14 +13,17 @@ public class Settings : MonoBehaviour
         mainmenuUI.SetActive(true);
         settingsUI.SetActive(false);
         highScoreText.text = "0";
+        StartCoroutine(HighScoreCouroutine());
     }
 
-    // Update is called once per frame
-    void Update()
+   
+
+    IEnumerator HighScoreCouroutine()
     {
         highScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        yield return new WaitForSeconds(.1f);
+        StartCoroutine(HighScoreCouroutine());
     }
-
 
     public void SettingsOpen()
     {

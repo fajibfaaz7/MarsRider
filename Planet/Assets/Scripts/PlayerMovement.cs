@@ -14,12 +14,12 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    
+
     void Update()
     {
-        foreach(Touch t in Input.touches)
+        foreach (Touch t in Input.touches)
         {
-            if(t.position.x < (Screen.width) / 2)
+            if (t.position.x < (Screen.width) / 2)
             {
                 _rotation = -1;
             }
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        
+
     }
 
     private void FixedUpdate()

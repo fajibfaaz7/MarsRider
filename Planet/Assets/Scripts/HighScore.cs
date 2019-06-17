@@ -7,8 +7,15 @@ public class HighScore : MonoBehaviour
 {
     public Text highScoreText;
 
-    void Update()
+    private void Start()
+    {
+        StartCoroutine(HighScoreCouroutine());
+    }
+
+    IEnumerator HighScoreCouroutine()
     {
         highScoreText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
+        yield return new WaitForSeconds(.1f);
+        StartCoroutine(HighScoreCouroutine());
     }
 }

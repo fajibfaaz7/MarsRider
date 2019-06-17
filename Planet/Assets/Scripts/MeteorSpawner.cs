@@ -39,18 +39,6 @@ public class MeteorSpawner : MonoBehaviour
             seconds = .5f;
         }
 
-        //if (score < 100)
-        //{
-        //    seconds = 2f;
-        //}
-        //else if (score > 100 && score < 200)
-        //{
-        //    seconds = 1.5f;
-        //}
-        //else if (score > 200)
-        //{
-        //    seconds = .5f;
-        //}
         Vector3 pos = Random.onUnitSphere * distance;
         Instantiate(meteorPrefab, pos, Quaternion.identity);
         yield return new WaitForSeconds(seconds);
