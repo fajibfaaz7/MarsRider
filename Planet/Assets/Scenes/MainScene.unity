@@ -2471,6 +2471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausedUI: {fileID: 1639194470}
   pauseUI: {fileID: 1484992003}
+  Player: {fileID: 8296172669145548872}
 --- !u!114 &1600505815
 MonoBehaviour:
   m_ObjectHideFlags: 0

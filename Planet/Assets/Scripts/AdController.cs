@@ -26,7 +26,7 @@ public class AdController : MonoBehaviour
     }
     void Start()
     {
-        Advertisement.Initialize(_storeId, true);
+        Advertisement.Initialize(_storeId, false);
         StartCoroutine(ShowBannerAd());
     }
 

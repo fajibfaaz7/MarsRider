@@ -9,11 +9,13 @@ public class GameOver : MonoBehaviour
     public GameObject reviveButton;
     public static int count;
     private string _rewardedVideoAdId = "rewardedVideo";
+    private string _storeId = "3190528";
 
     void Start()
     {
         highScoreUI.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         gameOverUI.SetActive(false);
+        Advertisement.Initialize(_storeId, false);
     }
 
     
@@ -60,10 +62,13 @@ public class GameOver : MonoBehaviour
 
     public void ShowRewardedVideo()
     {
-        Advertisement.Show(_rewardedVideoAdId);
+        if (Advertisement.IsReady())
+        {
+            Advertisement.Show(_rewardedVideoAdId, new ShowOptions() { resultCallback = OnUnityAdsDidFinish });
+        }
     }
 
-    void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
+    void OnUnityAdsDidFinish(ShowResult showResult)
     {
 
         if (showResult == ShowResult.Finished)

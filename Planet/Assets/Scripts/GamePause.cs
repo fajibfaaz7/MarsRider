@@ -6,11 +6,15 @@ public class GamePause : MonoBehaviour
 {
     public GameObject pausedUI;
     public GameObject pauseUI;
+    public GameObject Player;
+    AudioSource audioSource;
+   
     public static bool isScoreStopped = false;
     void Start()
     {
         pausedUI.SetActive(false);
         pauseUI.SetActive(true);
+        audioSource = Player.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,14 +33,19 @@ public class GamePause : MonoBehaviour
 
     public void Pause()
     {
+        audioSource.mute = true;
+        audioSource.loop = false;
         pauseUI.SetActive(false);
         Time.timeScale = 0;
         pausedUI.SetActive(true);
         isScoreStopped = true;
+        
     }
 
     public void Resume()
     {
+        audioSource.mute = false;
+        audioSource.loop = true;
         pausedUI.SetActive(false);
         pauseUI.SetActive(true);
         Time.timeScale = 1;
