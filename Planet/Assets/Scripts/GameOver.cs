@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class GameOver : MonoBehaviour
 {
@@ -7,12 +8,12 @@ public class GameOver : MonoBehaviour
     public Text highScoreUI;
     public GameObject reviveButton;
     public static int count;
+    private string _rewardedVideoAdId = "rewardedVideo";
 
     void Start()
     {
         highScoreUI.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         gameOverUI.SetActive(false);
-        
     }
 
     
@@ -37,6 +38,7 @@ public class GameOver : MonoBehaviour
 
     public void OnceMore()
     {
+        
         count = 1;
         GameManager.instance.Revive();
 
@@ -50,7 +52,31 @@ public class GameOver : MonoBehaviour
 
     public void MainMenu()
     {
+        
         count = 0;
         GameManager.instance.MainMenu();
+    }
+
+
+    public void ShowRewardedVideo()
+    {
+        Advertisement.Show(_rewardedVideoAdId);
+    }
+
+    void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
+    {
+
+        if (showResult == ShowResult.Finished)
+        {
+            OnceMore();
+        }
+        else if (showResult == ShowResult.Skipped)
+        {
+            return;
+        }
+        else if (showResult == ShowResult.Failed)
+        {
+            Debug.LogWarning("The ad did not finish due to an error.");
+        }
     }
 }

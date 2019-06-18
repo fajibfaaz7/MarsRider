@@ -856,10 +856,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 51269019-05df-40e9-8246-4239e2f604c4
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: MarsRider
+  organizationId: fzgames
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
