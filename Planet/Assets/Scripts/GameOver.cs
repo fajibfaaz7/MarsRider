@@ -15,7 +15,7 @@ public class GameOver : MonoBehaviour
     {
         highScoreUI.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         gameOverUI.SetActive(false);
-        Advertisement.Initialize(_storeId, false);
+        Advertisement.Initialize(_storeId, false);  
     }
 
     
