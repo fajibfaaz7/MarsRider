@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void MainMenu()
     {
+        Time.timeScale = 1;
         PlayerCollision.isDead = false;
         Score.sIncrement = 0;
         SceneManager.LoadScene("MenuScene");
