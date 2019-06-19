@@ -1,2 +1,2 @@
-# PlanetGame
-This is a Planet Game for Mobile
+# MarsRider
+This is a survival game
