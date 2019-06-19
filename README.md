@@ -11,6 +11,7 @@ Original game idea: [Brackey](https://brackeysgames.itch.io/shrinking-planet)
 * Blender
 * Photoshop
 
+## Release Platforms
 
 | Platform | Release Link |
 | --- | --- |
