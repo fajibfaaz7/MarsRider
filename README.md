@@ -1,7 +1,9 @@
 # MARS RIDER
 ![Game Play GIF](https://github.com/haseebpvt/MarsRider/blob/master/game_play.gif)
 
-A survival game designed in Unity.
+ :blue_car: A survival game designed in Unity.
+ 
+ Feel free to submit your contributions :)
 
 Original game idea: [Brackey](https://brackeysgames.itch.io/shrinking-planet)
 
