@@ -17,6 +17,6 @@ Original game idea: [Brackeys](https://brackeysgames.itch.io/shrinking-planet)
 
 | Platform | Release Link |
 | --- | --- |
-| Play Store | N/A |
+| Play Store | [Link](https://play.google.com/store/apps/details?id=com.fzgamestudios.marsrider) |
 | App Store | N/A |
 | FDroid | N/A |
