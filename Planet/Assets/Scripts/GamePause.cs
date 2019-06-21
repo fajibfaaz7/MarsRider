@@ -1,23 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GamePause : MonoBehaviour
 {
     public GameObject pausedUI;
     public GameObject pauseUI;
     public GameObject Player;
-    AudioSource audioSource;
+    public GameObject Meteor;
+    AudioSource audioSourceP;
+    AudioSource audioSourceM;
    
     public static bool isScoreStopped = false;
     void Start()
     {
         pausedUI.SetActive(false);
         pauseUI.SetActive(true);
-        audioSource = Player.GetComponent<AudioSource>();
+        audioSourceP = Player.GetComponent<AudioSource>();
+        audioSourceM = Meteor.GetComponent<AudioSource>();
+        audioSourceP.mute = false;
+        audioSourceP.loop = true;
+        audioSourceM.mute = false;
+        audioSourceM.loop = true;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if(PlayerCollision.isDead == true)
@@ -33,8 +38,11 @@ public class GamePause : MonoBehaviour
 
     public void Pause()
     {
-        audioSource.mute = true;
-        audioSource.loop = false;
+        
+        audioSourceP.mute = true;
+        audioSourceP.loop = false;
+        audioSourceM.mute = true;
+        audioSourceM.loop = false;
         pauseUI.SetActive(false);
         Time.timeScale = 0;
         pausedUI.SetActive(true);
@@ -44,8 +52,10 @@ public class GamePause : MonoBehaviour
 
     public void Resume()
     {
-        audioSource.mute = false;
-        audioSource.loop = true;
+        audioSourceP.mute = false;
+        audioSourceP.loop = true;
+        audioSourceM.mute = false;
+        audioSourceM.loop = true;
         pausedUI.SetActive(false);
         pauseUI.SetActive(true);
         Time.timeScale = 1;

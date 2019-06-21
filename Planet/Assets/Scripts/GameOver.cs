@@ -82,6 +82,7 @@ public class GameOver : MonoBehaviour
         else if (showResult == ShowResult.Failed)
         {
             Debug.LogWarning("The ad did not finish due to an error.");
+            
         }
     }
 }

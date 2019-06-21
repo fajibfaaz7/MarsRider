@@ -37,7 +37,7 @@ MonoBehaviour:
   m_SoftShadowsSupported: 0
   m_UseSRPBatcher: 0
   m_SupportsDynamicBatching: 0
-  m_MixedLightingSupported: 1
+  m_MixedLightingSupported: 0
   m_ShadowType: 0
   m_LocalShadowsSupported: 0
   m_LocalShadowsAtlasResolution: 256

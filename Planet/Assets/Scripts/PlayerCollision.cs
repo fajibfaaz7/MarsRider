@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
+
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -19,7 +17,6 @@ public class PlayerCollision : MonoBehaviour
             isDead = true;
             Handheld.Vibrate();
             Destroy(this.gameObject);
-            FindObjectOfType<AudioManager>().Play("PlayerDeath");   //car crash
             Instantiate(playerDeathPrefab, pos, rot);
             Instantiate(playerDeathEffectPrefab, pos, rot);
             

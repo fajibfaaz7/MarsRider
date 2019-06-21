@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private int fps = 30;
     public static GameManager instance;
 
     
     private void Awake()
     {
+        Application.targetFrameRate = fps;
         instance = this;
     }
     public void Restart()

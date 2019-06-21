@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +7,8 @@ public class Settings : MonoBehaviour
     public GameObject mainmenuUI;
     public GameObject settingsUI;
     public Text highScoreText;
+    //public GameObject audioManager;
+    
     void Start()
     {
         mainmenuUI.SetActive(true);
@@ -41,4 +42,9 @@ public class Settings : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("HighScore");
     }
+
+    //public void ToggleChanged(bool newValue)
+    //{
+    //    audioManager.SetActive(newValue);
+    //}
 }

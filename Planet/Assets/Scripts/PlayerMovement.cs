@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,11 +19,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (t.position.x < (Screen.width) / 2)
             {
-                _rotation = -1;
+                _rotation = -1f;
             }
             else if (t.position.x > (Screen.width / 2))
             {
-                _rotation = 1;
+                _rotation = 1f;
             }
             else
             {

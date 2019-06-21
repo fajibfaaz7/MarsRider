@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -9,7 +8,6 @@ public class AdController : MonoBehaviour
     public static AdController adInstance;
     private string _storeId = "3190528";
     //private string _videoAdId = "video";
-    //private string _rewardedVideoAdId = "rewardedVideo";
     private string _bannerAdId = "bannerAd";
 
 
