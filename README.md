@@ -5,7 +5,6 @@
  
  Feel free to submit your contributions :)
 
-Original game idea: [Brackeys](https://brackeysgames.itch.io/shrinking-planet)
 
 ## Tools used
 * Unity
